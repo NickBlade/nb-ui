@@ -8,5 +8,9 @@ shared_scripts {
 }
 
 client_scripts { 
-	'client/client.lua' 
+	'client/.main.lua',
+	'client/carhud.lua', 
+	'client/hud.lua',
+	'client/notify.lua',
+	'client/text.lua'
 } 
