@@ -1,5 +1,5 @@
 NB.Text = function(show, text, color)
-    if not Config.text then
+    if not Config.text.enable then
         print('Text UI is disabled in config file.')
     elseif show and text then
         SendNUIMessage({
