@@ -1,5 +1,7 @@
 NB.Text = function(show, text, color)
-    if show and text then
+    if not Config.text then
+        print('Text UI is disabled in config file.')
+    elseif show and text then
         SendNUIMessage({
             type = 'show-text',
             text = text,
@@ -14,7 +16,7 @@ NB.Text = function(show, text, color)
     end
 end
 
-RegisterCommand("ddd", function()
+RegisterCommand("uitest", function()
     SendNUIMessage({
         type = 'show-text',
     })
