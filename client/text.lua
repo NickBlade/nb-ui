@@ -1,7 +1,7 @@
 NB.Text = function(show, text, color)
     if show and text then
         SendNUIMessage({
-            type = 'show',
+            type = 'show-text',
             text = text,
             color = color
         })
@@ -9,7 +9,14 @@ NB.Text = function(show, text, color)
         print('Missing text field.')
     elseif not show then
         SendNUIMessage({
-            type = 'hide'
+            type = 'hide-text'
         })
     end
 end
+
+RegisterCommand("ddd", function()
+    SendNUIMessage({
+        type = 'show-text',
+    })
+end)
+
