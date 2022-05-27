@@ -1,3 +1,3 @@
-NB.UI = {}
+NB = {}
 
-exports('NB.UI', NB.UI)
+exports('NB', NB)
